@@ -1,0 +1,16 @@
+{
+  "include": ["src/**/*.ts"],
+
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "out",
+
+    "declaration": true,
+    "declarationDir": "out",
+
+    "allowJs": false,
+    "esModuleInterop": true,
+    "noImplicitAny": true
+  }
+}
