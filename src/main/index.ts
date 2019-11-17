@@ -5,7 +5,7 @@ const callbacks = new Map<
   [(value: any) => void, (reason: any) => void]
 >();
 
-const loadWorker = (url: string, options: WorkerOptions) => {
+export const loadWorker = (url: string, options: WorkerOptions) => {
   const worker = new Worker(url, options);
 
   worker.onmessage = (event) => {
@@ -32,5 +32,3 @@ const loadWorker = (url: string, options: WorkerOptions) => {
 
   return dispatch;
 };
-
-export default loadWorker;

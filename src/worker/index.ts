@@ -1,4 +1,4 @@
-const wrapHandler = <DataType extends Array<any>, ReturnType>(
+export const wrapHandler = <DataType extends Array<any>, ReturnType>(
   handler: (data: DataType) => ReturnType | Promise<ReturnType>
 ) => async (event: MessageEvent) => {
   const [taskId, data] = event.data as [number, DataType];
@@ -15,5 +15,3 @@ const wrapHandler = <DataType extends Array<any>, ReturnType>(
 
   postMessage([errored, taskId, result]);
 };
-
-export default wrapHandler;
