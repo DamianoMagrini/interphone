@@ -1,3 +1,3 @@
 # <span style="display: block; text-align: center;">Interphone</span>
 
-Interphone removes the hassle of communicating with web workers, hiding everything behind a single, clean, asynchronous interface.
+Interphone provides a realiable and predictable asynchronous wrapper for effortless communication with web workers.

@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": ["./**/*.ts"],
+
+  "compilerOptions": {
+    "outDir": "../../worker",
+
+    "declarationDir": "../../worker",
+    "lib": ["webworker", "es2019"]
+  }
+}

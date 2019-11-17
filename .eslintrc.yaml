@@ -1,0 +1,45 @@
+---
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/eslint-recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:@typescript-eslint/recommended-requiring-type-checking
+  - prettier
+
+env:
+  browser: true
+  es6: true
+
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 2020
+  sourceType: module
+
+plugins:
+  - prettier
+  - '@typescript-eslint'
+
+overrides:
+  - files:
+      - src/main/**/*
+    env:
+      browser: true
+    parserOptions:
+      project: src/main/tsconfig.json
+  - files:
+      - src/worker/**/*
+    env:
+      worker: true
+    parserOptions:
+      project: src/worker/tsconfig.json
+
+rules:
+  '@typescript-eslint/semi': error
+  '@typescript-eslint/no-unused-vars':
+    - warn
+    - argsIgnorePattern: '^_'
+  '@typescript-eslint/require-await': 'off'
+  '@typescript-eslint/triple-slash-reference': 'off'
+  prettier/prettier: error
