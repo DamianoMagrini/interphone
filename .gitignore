@@ -3,5 +3,5 @@ node_modules/
 package-lock.json
 
 # Built files
-./main/
-./worker/
+/main/
+/worker/
