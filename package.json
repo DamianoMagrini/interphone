@@ -1,6 +1,6 @@
 {
   "name": "interphone",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A library that manages communication with web workers, hiding it behind a simple asynchronous interface.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

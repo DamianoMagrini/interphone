@@ -62,7 +62,7 @@ As you can see, by invoking the worker with Interphone, we can be sure that ever
 ## Usage
 
 ### On the main thread
-> import from `interphone/main`
+> import from `interphone/main` or just `interphone`
 
 Importing and using a worker is incredibly easy. Just load it with `loadWorker` and you will have access to an asynchronous function that invokes your worker and returns as soon as the worker has finished. Let's see an example:
 
@@ -77,7 +77,7 @@ concatenateWorker(['This', 'is', 'so', 'cool!'])
 ```
 
 ### In the worker
-> import from `interphone/worker`
+> import from `interphone/worker` or just `interphone`
 
 In your worker, it's even easier: just create a *synchronous or asynchronous* function that takes in the data as its only argument and returns the result. Then, wrap it with `wrapHandler` and assign
 the wrapped function to `self.onmessage`. Again, an example (the `concatenate-worker.js` from before):
