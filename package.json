@@ -20,6 +20,13 @@
   },
   "author": "Damiano Magrini <damiano.magrini@gmail.com>",
   "license": "CC-BY-4.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DamianoMagrini/interphone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DamianoMagrini/interphone/issues"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.7.0",
     "@typescript-eslint/parser": "^2.7.0",
