@@ -3,5 +3,7 @@ node_modules/
 package-lock.json
 
 # Built files
+/index.js
+/index.d.ts
 /main/
 /worker/

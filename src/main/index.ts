@@ -5,7 +5,7 @@ const callbacks = new Map<
   [(value: any) => void, (reason: any) => void]
 >();
 
-export const loadWorker = (url: string, options: WorkerOptions) => {
+export const loadWorker = (url: string, options?: WorkerOptions) => {
   const worker = new Worker(url, options);
 
   worker.onmessage = (event) => {
@@ -18,7 +18,7 @@ export const loadWorker = (url: string, options: WorkerOptions) => {
     callbacks.delete(taskId);
   };
 
-  const dispatch = (data: any[], transferList: Transferable[]) => {
+  const dispatch = (data: any[], transferList?: Transferable[]) => {
     const taskId = lastTaskId++;
 
     const promise = new Promise((resolve, reject) => {

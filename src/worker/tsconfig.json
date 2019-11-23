@@ -6,6 +6,6 @@
     "outDir": "../../worker",
 
     "declarationDir": "../../worker",
-    "lib": ["webworker", "es2019"]
+    "lib": ["es2019", "webworker"]
   }
 }
