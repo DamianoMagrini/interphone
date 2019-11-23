@@ -6,6 +6,6 @@
     "outDir": "../../main",
 
     "declarationDir": "../../main",
-    "lib": ["es2019", "dom"]
+    "lib": ["es6", "dom"]
   }
 }
