@@ -1,9 +1,11 @@
-export const wrapHandler = <DataType extends Array<any>, ReturnType>(
+import { WorkerMessage } from '../shared';
+
+export const wrapHandler = <DataType, ReturnType>(
   handler: (data: DataType) => ReturnType | Promise<ReturnType>
-) => async (event: MessageEvent) => {
+) => async (event: MessageEvent): Promise<void> => {
   const [taskId, data] = event.data as [number, DataType];
 
-  let result: ReturnType;
+  let result: ReturnType | Error | any;
   let errored = false;
 
   try {
@@ -13,5 +15,5 @@ export const wrapHandler = <DataType extends Array<any>, ReturnType>(
     result = error;
   }
 
-  postMessage([errored, taskId, result]);
+  postMessage([errored, taskId, result] as WorkerMessage);
 };
