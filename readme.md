@@ -4,6 +4,8 @@
   `$ npm i interphone`
 
   [![](https://img.shields.io/npm/v/interphone?style=flat-square)](https://www.npmjs.com/package/interphone)
+  [![](https://img.shields.io/bundlephobia/min/interphone?style=flat-square)](https://bundlephobia.com/result?p=interphone)
+  [![](https://img.shields.io/bundlephobia/minzip/interphone?style=flat-square)](https://bundlephobia.com/result?p=interphone)
 </div>
 
 <hr />
