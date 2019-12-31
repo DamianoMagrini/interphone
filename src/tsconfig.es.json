@@ -1,0 +1,10 @@
+// This file is used when transpiling to ES6 modules.
+{
+  "extends": "./tsconfig.json",
+
+  "compilerOptions": {
+    "outDir": "../lib/es",
+
+    "module": "ES6"
+  }
+}

@@ -1,13 +1,14 @@
 {
-  "extends": "../tsconfig.json",
-  "include": ["./index.ts"],
-  "exclude": [],
+  "include": ["./**/*.ts"],
 
   "compilerOptions": {
-    "outDir": "..",
+    "target": "ES6",
 
-    "declarationDir": "..",
-    "lib": ["es6", "dom", "webworker"],
-    "skipLibCheck": true // dom and webworker are incompatible, but both needed
+    "allowJs": false,
+    "esModuleInterop": true,
+    "lib": ["ES6", "DOM", "WebWorker"],
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "skipLibCheck": true // DOM and WebWorker are incompatible, but both needed
   }
 }

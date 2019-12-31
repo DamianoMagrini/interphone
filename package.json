@@ -15,22 +15,21 @@
   },
 
 
-  "main": "index.js",
-  "types": "index.d.ts",
-
+  "main": "lib/cjs/index.js",
+  "module": "lib/es/index.js",
+  "types": "lib/d/index.d.ts",
 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf main worker index.js index.d.ts",
     "build": "run-s clean build:tsc",
     "build:tsc": "run-p build:tsc:*",
-    "build:tsc:index": "tsc --project src/tsconfig.json",
-    "build:tsc:main": "tsc --project src/main/tsconfig.json",
-    "build:tsc:worker": "tsc --project src/worker/tsconfig.json",
+    "build:tsc:cjs": "tsc --project src/tsconfig.cjs.json",
+    "build:tsc:es": "tsc --project src/tsconfig.es.json",
+    "build:tsc:d": "tsc --project src/tsconfig.d.json",
     "lint": "run-s lint:tsc lint:eslint",
     "lint:tsc": "run-p lint:tsc:*",
-    "lint:tsc:main": "tsc --noEmit --project src/main/tsconfig.json",
-    "lint:tsc:worker": "tsc --noEmit --project src/worker/tsconfig.json",
+    "lint:tsc:main": "tsc --noEmit --project src/tsconfig.json",
     "lint:eslint": "eslint src/**/*.ts"
   },
 

@@ -1,0 +1,10 @@
+// This file is used when transpiling to CommonJS modules.
+{
+  "extends": "./tsconfig.json",
+
+  "compilerOptions": {
+    "outDir": "../lib/cjs",
+
+    "module": "commonjs"
+  }
+}
