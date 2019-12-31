@@ -1,12 +1,12 @@
-<center>
-  <h1>ɪ ɴ ᴛ ᴇ ʀ ᴘ ʜ ᴏ ɴ ᴇ</h1>
+<div align="center" style="text-align: center">
+  <h1 align="center" style="text-align: center">ɪ ɴ ᴛ ᴇ ʀ ᴘ ʜ ᴏ ɴ ᴇ</h1>
 
   `$ npm i interphone`
 
   [![](https://img.shields.io/npm/v/interphone?style=flat-square)](https://www.npmjs.com/package/interphone)
   [![](https://img.shields.io/bundlephobia/min/interphone?style=flat-square)](https://bundlephobia.com/result?p=interphone)
   [![](https://img.shields.io/bundlephobia/minzip/interphone?style=flat-square)](https://bundlephobia.com/result?p=interphone)
-</center>
+</div>
 
 <hr />
 
