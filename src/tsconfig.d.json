@@ -1,0 +1,11 @@
+// This file is used when exporting declarations.
+{
+  "extends": "./tsconfig.json",
+
+  "compilerOptions": {
+    "emitDeclarationOnly": true,
+
+    "declaration": true,
+    "declarationDir": "../lib/d"
+  }
+}

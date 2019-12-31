@@ -12,11 +12,9 @@ env:
 
 parser: '@typescript-eslint/parser'
 parserOptions:
-  ecmaFeatures:
-    jsx: true
   ecmaVersion: 2020
   sourceType: module
-  project: tsconfig.json
+  project: src/tsconfig.json
 
 plugins:
   - prettier
@@ -27,14 +25,10 @@ overrides:
       - src/main/**/*
     env:
       browser: true
-    parserOptions:
-      project: src/main/tsconfig.json
   - files:
       - src/worker/**/*
     env:
       worker: true
-    parserOptions:
-      project: src/worker/tsconfig.json
 
 rules:
   '@typescript-eslint/semi': error
