@@ -1,6 +1,7 @@
 # Node
 node_modules/
 package-lock.json
+yarn.lock
 
 # Built files
 /index.js
