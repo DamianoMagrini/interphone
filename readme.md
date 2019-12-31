@@ -1,4 +1,4 @@
-<div align="center">
+<center>
   <h1>ɪ ɴ ᴛ ᴇ ʀ ᴘ ʜ ᴏ ɴ ᴇ</h1>
 
   `$ npm i interphone`
@@ -6,7 +6,7 @@
   [![](https://img.shields.io/npm/v/interphone?style=flat-square)](https://www.npmjs.com/package/interphone)
   [![](https://img.shields.io/bundlephobia/min/interphone?style=flat-square)](https://bundlephobia.com/result?p=interphone)
   [![](https://img.shields.io/bundlephobia/minzip/interphone?style=flat-square)](https://bundlephobia.com/result?p=interphone)
-</div>
+</center>
 
 <hr />
 
@@ -93,10 +93,10 @@ self.onmessage = wrapHandler(concatenateStrings);
 ```
 
 ## Error handling
-If your worker happened to throw an error upon being called, it's no problem. The promise will be rejected, so you can handle the error as if it was just any asynchronous function throwing.
+If your worker happened to throw an error upon being called, it's no problem. The promise will be rejected, so you can handle the error as if it were just any asynchronous function throwing.
 
 ## When not to use it
-While Interphone is great when your web workers are just like functions (that is, you invoke them with some data/arguments and it returns a *single* result), it's not that great when they are not function-like. For example, if your worker stayed in the background and emitted events every now and then, Interphone won't come in very useful.
+While Interphone is great when your web workers are just like functions (that is, you invoke them with some data/arguments and they return a *single* result), it's not that great when they are not function-like. For example, if your worker stayed in the background and emitted events every now and then, Interphone wouldn't come in very useful.
 
 ## License
 This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
